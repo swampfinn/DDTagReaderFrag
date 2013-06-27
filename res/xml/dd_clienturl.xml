@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference android:title="Server URL"
+	    android:key="URL"
+	    android:dialogTitle="Enter a URL"
+	    android:defaultValue="0.0.0.0.0"
+	    android:inputType="textUri"
+	    android:persistent="true"
+	    android:summary="Sets a URL for the server"
+	    />
+	<EditTextPreference android:title="Reader Id"
+	    android:key="READER_ID"
+	    android:dialogTitle="Enter an Id for this reader"
+	    android:defaultValue="0"
+	    android:persistent="true"
+	    android:summary="Sets an Id to be used for this NFC reader"
+	    />
+	<ListPreference
+        android:key="CHECK_INTERVAL"
+        android:title="Tag check interval"
+        android:dialogTitle="Set the check interval"
+        android:entries="@array/tagcheck_interval_names"
+        android:entryValues="@array/tagcheck_interval_values"
+        android:defaultValue="@integer/tagcheck_interval_default"
+        android:summary="Sets the interval at which to re-check tag connections" />
+
+</PreferenceScreen>

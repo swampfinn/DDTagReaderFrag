@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DDTagReader</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string-array name="tagcheck_interval_names">
+    	<item>1 second</item>
+    	<item>2 seconds</item>
+    	<item>3 seconds</item>
+    	<item>4 seconds</item>
+	</string-array>
+
+    <string-array name="tagcheck_interval_values">
+    	<item>1</item>
+    	<item>2</item>
+    	<item>3</item>
+    	<item>4</item>
+	</string-array>
+	
+    <integer name="tagcheck_interval_default">2</integer>
+</resources>
