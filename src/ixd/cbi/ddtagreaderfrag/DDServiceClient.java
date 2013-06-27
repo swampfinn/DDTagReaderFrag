@@ -5,7 +5,7 @@ import android.util.Log;
 import com.loopj.android.http.*;
 
 public class DDServiceClient {
-	private static String BASE_URL = "http://10.27.246.207:3000/";
+	private static String BASE_URL = "http://127.0.0.1:3000/";
 	public static final String TAG = DDServiceClient.class.getSimpleName();
 	public static final String ACTION_NFC_ADD = "nfcadd";
 	public static final String ACTION_NFC_REMOVE = "nfcremove";
