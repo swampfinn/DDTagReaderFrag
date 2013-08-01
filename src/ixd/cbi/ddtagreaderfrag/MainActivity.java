@@ -69,7 +69,7 @@ public class MainActivity extends Activity
      */
     private void loadPreferences(Bundle savedInstanceState){
     	SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        String url = prefs.getString(PREF_KEY_URL, null);
+        String url = prefs.getString(PREF_KEY_URL, "0.0.0.0");
         DDServiceClient.setBaseUrl(url);
         String val = prefs.getString(PREF_KEY_TAG_CHECK_INTERVAL, null);
 		mTagCheckInterval = (val != null ? Long.valueOf(val): 2)*1000L;
